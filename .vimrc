@@ -17,6 +17,7 @@ set si
 set wrap
 
 set number
+set relativenumber
 
 set laststatus=2
 set cmdheight=2
@@ -28,6 +29,21 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 map <F2> :w<CR>
 imap <F2> <ESC>:w<CR>i
 
+" VUNDLE
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/syntastic'
+
+call vundle#end()
+
+filetype plugin indent on
 
 " FUNCTIONS
 
