@@ -1,3 +1,4 @@
+set noswapfile
 set history=700
 set ruler
 set autoread
@@ -21,6 +22,11 @@ set relativenumber
 
 set laststatus=2
 set cmdheight=2
+
+set wildmenu
+set showmatch
+set incsearch
+set hlsearch
 
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
