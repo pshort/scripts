@@ -22,7 +22,14 @@ set laststatus=2
 set cmdheight=2
 
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
-" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %1
+
+" MAPPINGS
+
+map <F2> :w<CR>
+imap <F2> <ESC>:w<CR>i
+
+
+" FUNCTIONS
 
 function! HasPaste()
     if &paste
