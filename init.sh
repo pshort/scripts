@@ -1,7 +1,7 @@
 YUM_CMD=$(which yum)
 APT_GET_CMD=$(which apt-get)
 
-if [[ ! -z $YUM_CMD]]; then
+if [[ ! -z $YUM_CMD ]]; then
 
     sudo yum update -y
 
@@ -9,7 +9,7 @@ if [[ ! -z $YUM_CMD]]; then
     sudo yum install vim -y
     sudo yum install tmux -y
 
-elif [[ ! -z $APT_GET_CMD]]; then
+elif [[ ! -z $APT_GET_CMD ]]; then
 
     sudo apt-get update -y
     sudo apt-get upgrade -y
@@ -17,6 +17,9 @@ elif [[ ! -z $APT_GET_CMD]]; then
     sudo apt-get install git -y
     sudo apt-get install vim -y
     sudo apt-get install tmux -y
+else
+    echo "Cant find a package manager :("
+    exit 1;
 fi
 
 git config --global user.email "peter.short@gmail.com"
