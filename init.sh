@@ -1,4 +1,3 @@
-#!bin/bash
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -13,4 +12,5 @@ git config --global core.editor "vim"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+cp .vimrc ~/.vimrc
 
