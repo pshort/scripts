@@ -33,7 +33,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 " MAPPINGS
 
 map <F2> :w<CR>
-imap <F2> <ESC>:w<CR>i
+imap <F2> <ESC>:w<CR>
 
 " VUNDLE
 
@@ -46,6 +46,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpwim/ctrlp.vim'
 
 call vundle#end()
 
