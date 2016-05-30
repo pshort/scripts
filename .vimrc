@@ -34,6 +34,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 map <F2> :w<CR>
 imap <F2> <ESC>:w<CR>
+map <SPACE> <ESC>gg/
 
 " VUNDLE
 
