@@ -34,5 +34,8 @@ cp .vimrc ~/.vimrc
 cp .bashrc ~/.bashrc
 source ~/.bashrc
 
+mkdir ~/.tmuxinator
+cp ping.yml ~/.tmuxinator/ping.yml
+
 
 sudo gem install tmuxinator
