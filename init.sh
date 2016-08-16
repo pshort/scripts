@@ -8,6 +8,7 @@ if [[ ! -z $YUM_CMD ]]; then
     sudo yum install git -y
     sudo yum install vim -y
     sudo yum install tmux -y
+    sudo yum install gem -y
 
 elif [[ ! -z $APT_GET_CMD ]]; then
 
@@ -17,6 +18,7 @@ elif [[ ! -z $APT_GET_CMD ]]; then
     sudo apt-get install git -y
     sudo apt-get install vim -y
     sudo apt-get install tmux -y
+    sudo apt-get install gem -y
 else
     echo "Cant find a package manager :("
     exit 1;
