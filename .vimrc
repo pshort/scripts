@@ -36,6 +36,8 @@ map <F2> :w<CR>
 imap <F2> <ESC>:w<CR>
 map <SPACE> <ESC>gg/
 
+map <C-n> :NERDTreeToggle<CR>
+
 " VUNDLE
 
 set nocompatible
