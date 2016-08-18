@@ -47,10 +47,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 
