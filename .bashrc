@@ -119,3 +119,14 @@ fi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+#gt 
+function gt() {
+    git add .
+    git commit -a -m "$1"
+    git push origin
+}
+
+function pll() {
+    git pull origin
+}
