@@ -127,6 +127,8 @@ function gt() {
     git push origin
 }
 
-function pll() {
+function pl() {
     git pull origin
 }
+
+stty -ixon
