@@ -56,6 +56,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'gcmt/taboo.vim'
 
 call vundle#end()
 
