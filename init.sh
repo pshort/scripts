@@ -45,6 +45,7 @@ mkdir ~/.tmuxinator
 cp ping.yml ~/.tmuxinator/ping.yml
 
 #--------------------------- GIT KEYRING ------------------------
+# add another comment
 
 sudo apt-get install libgnome-keyring-dev
 sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
