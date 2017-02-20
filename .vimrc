@@ -3,7 +3,7 @@ set history=700
 set ruler
 set autoread
 
-colorscheme torte
+colorscheme elflord
 syntax on
 set encoding=utf8
 
