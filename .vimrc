@@ -59,6 +59,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'gcmt/taboo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
@@ -74,3 +75,5 @@ function! HasPaste()
 endfunction
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='badwolf'
