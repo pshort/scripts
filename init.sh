@@ -29,6 +29,7 @@ git config --global user.name "Peter Short"
 git config --global core.editor "vim"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/powerline/fonts ~/fonts
 
 cp .vimrc ~/.vimrc
 cp .bashrc ~/.bashrc
@@ -38,8 +39,8 @@ source ~/.bashrc
 vim +PluginInstall +qall
 
 # you complete me
-cd ~/.vim/bundle/YouCompleteMe
-./install.py
+# cd ~/.vim/bundle/YouCompleteMe
+# ./install.py
 
 mkdir ~/.tmuxinator
 cp ping.yml ~/.tmuxinator/ping.yml
@@ -56,3 +57,8 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/gnom
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 sudo gem install tmuxinator
+
+cd ~/fonts
+./install.sh
+cd ~/
+rm ~/fonts -rf

@@ -49,7 +49,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -57,6 +57,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'gcmt/taboo.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -70,3 +72,5 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+let g:airline_powerline_fonts = 1
