@@ -55,6 +55,7 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/gnom
 #----------------------------------------------------------------
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.lf "log --color --pretty=format:'%Cred%h%Creset - %Cblue%an, %ce%Creset : %Cgreen%s'"
 
 sudo gem install tmuxinator
 
