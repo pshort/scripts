@@ -57,6 +57,11 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/gnom
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git config --global alias.lf "log --color --pretty=format:'%Cred%h%Creset - %Cblue%an, %ce%Creset : %Cgreen%s'"
 
+git config --global alias.co checkout
+git conifg --global alias.c commit
+git config --global alias.b branch
+git config --global alias.s status
+
 sudo gem install tmuxinator
 
 cd ~/fonts
