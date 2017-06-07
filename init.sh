@@ -61,6 +61,8 @@ git config --global alias.co checkout
 git conifg --global alias.c commit
 git config --global alias.b branch
 git config --global alias.s status
+git config --global alias.p push
+git config --global alias.a add
 
 sudo gem install tmuxinator
 
