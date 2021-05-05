@@ -1,0 +1,21 @@
+[core]
+	editor = vim
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lf = log --color --pretty=format:'%Cred%h%Creset - %Cblue%an, %ce%Creset : %Cgreen%s'
+	co = checkout
+	b = branch
+	s = status
+	p = push
+	pl = pull
+	a = add
+[user]
+	email = peter@meniga.net
+	name = Peter Short
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
