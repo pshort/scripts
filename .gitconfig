@@ -10,7 +10,7 @@
 	pl = pull
 	a = add
 [user]
-	email = peter@meniga.net
+	email = peter@crankwheel.com
 	name = Peter Short
 [pull]
 	rebase = false
