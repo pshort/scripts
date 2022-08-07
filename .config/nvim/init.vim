@@ -83,8 +83,26 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'https://github.com/dense-analysis/ale'
 
 call plug#end()
+
+" ALE
+" ====================
+
+let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \ 'javascriptreact': ['eslint'],
+  \ }
+
+let g:ale_fixers = {
+  \ 'javascript': ['eslint'],
+  \ 'javascriptreact': ['eslint'],
+  \ }
+
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
 
 " FLOATTERM
 " ====================
@@ -150,6 +168,20 @@ command! -bang -nargs=? -complete=dir AllFiles
 
 " COC STUFF
 " ==============
+
+let g:coc_global_extensions = [
+    \ 'coc-css',
+    \ 'coc-elixir',
+    \ '@yaegassy/coc-tailwindcss3',
+    \ 'coc-tsserver',
+    \ 'coc-lua',
+    \ 'coc-json',
+    \ 'coc-html',
+    \ 'coc-git',
+\]
+
+:highlight CocFloating ctermbg=8
+:highlight CocFloating ctermfg=3
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
