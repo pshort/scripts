@@ -105,5 +105,19 @@ fpath=($fpath "/home/peter/.zfunctions")
   autoload -U promptinit; promptinit
   prompt spaceship
 
+export VISUAL=vim
+export EDITOR="$visual"
+
+alias ls='ls -all --color=auto'
+alias grep='grep --color=auto'
+
+glean() {
+	git co master
+	git clean -df
+	git reset --hard HEAD
+	git pull
+	echo "All your gits are belong to us"
+	echo "============================================================"
+}
 
 source ~/.profile

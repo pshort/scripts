@@ -9,8 +9,8 @@ set encoding=utf8
 set expandtab
 set smarttab
 
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 set ai
 set si
@@ -78,9 +78,6 @@ endfunction
 autocmd VimEnter * call StartUp()
 
 call plug#begin('~/.vim/plugged')
-
-
-" Plugin 'Valloric/YouCompleteMe'
 
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
